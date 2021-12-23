@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.khung{
+    background: url("../img/noel2.png")no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    object-fit: contain;
+   
+}
+.title{
+    text-align: center;
+}
+.box{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    justify-content: center;
+    
+    
+}
+.box1{
+    width: 375px;
+    height: 470px;
+    background: red;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+    border-radius: 20px;
+    border: 8px dashed blue;
+    background: url(../img/noel4.png)no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 0 0 30px 30px #ffcccc;
+    color: rgb(135, 255, 80);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 23px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    object-fit: cover;
+    
+}
+.box1:hover{
+    background: url(../img/noel16.png)no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+    border: 8px dashed #3aff00;
+   color: rgb(255, 0, 140);
+    text-align: center;
+}
+.loi-chuc {
+    margin:  0 auto;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(255, 0, 140);
+    font-size: 25px;
+    background: cornsilk;
+    padding: 10px 20px;
+    width: 770px ;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 30px #ffcccc;
+}
+.video{
+    text-align: center;
+}
+.btn{
+    background: blue;
+    width: 111px;
+    height: 40px;
+    font-size: 19px;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 0px;margin-top: 20px;
+}
+.btn:hover{
+    background: red;
+    color: blue;
+}
+.gif{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.trai-gif{
+    display: flex;
+    flex-direction: column;
+}
+.phai-gif{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+h1{
+    font-size: 48px;
+}
+
+/* reponsive */
+
+
+@media screen and (max-width: 769px){
+    .box{
+        width: 768px;
+    }
+    .box1{
+        width: 320px;
+        height: 420px;
+        font-size: 19px;
+        line-height: 21px;
+    }
+    .video1{
+        height: 120px;
+
+    }
+    .video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .gif{
+        width: 80px;
+        height: 80px;
+    }
+    .loi-chuc >h2{
+        font-size: 19px;
+    }
+    .loi-chuc{
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 415px){
+    h1{
+        font-size: 19px;
+       padding-top: 20px;
+    }
+    .box{
+        width: 375px;
+    }
+    .loi-chuc{
+        width: 300px;
+    }
+    .gif{
+        width: 50px;
+        height: 50px;
+        margin-left: 8px;
+    }
+    .trai-gif{
+        flex-direction: row;
+    }
+    .phai-gif{
+        flex-direction: row;
+    }
+    .box1{
+        width: 250px;
+        height: 300px;
+        margin-left: 0px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: normal;
+    }
+    .video1{
+        height: 62px;
+        width: 201px;
+    }
+    .loi-chuc >h2{
+        font-size: 16px;
+    }
+    .loi-chuc{
+        width: 331px;
+    }
+}
